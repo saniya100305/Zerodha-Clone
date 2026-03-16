@@ -1,5 +1,6 @@
 import React from "react";
 import { HiMenu } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,43 +10,41 @@ function Navbar() {
     >
       <div className="container p-2">
 
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             style={{ width: "25%" }}
             alt="Logo"
           />
-        </a>
+        </Link>
 
         <div className="collapse navbar-collapse justify-content-end">
 
           <ul className="navbar-nav align-items-center">
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Signup</a>
+              <Link className="nav-link" to="/signup">Signup</Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <Link className="nav-link" to="/about">About</Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Product</a>
+              <Link className="nav-link" to="/products">Products</Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <Link className="nav-link" to="/pricing">Pricing</Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Support</a>
+              <Link className="nav-link" to="/support">Support</Link>
             </li>
 
             {/* Dark 3-line menu icon */}
             <li className="nav-item ms-3">
-              <a className="nav-link" href="#">
-                <HiMenu size={24} color="#000" />
-              </a>
+              <HiMenu size={24} color="#000" />
             </li>
 
           </ul>

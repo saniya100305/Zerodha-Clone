@@ -4,8 +4,8 @@ import Hero from './Hero';
 import Brokerage from './Brokerage';
 
 import OpenAccount from '../OpenAccount';
-import NavBar from '../Navbar';
-import Footer from '../Footer';
+import NavBar from '../../Navbar';
+import Footer from '../../Footer';
 
 function HeroPage() {
     return (
@@ -13,9 +13,9 @@ function HeroPage() {
             <Brokerage/>
             <Hero/>
 
-            <NavBar />
+            
             <OpenAccount />
-            <Footer />
+            
         </>
     );
 }
